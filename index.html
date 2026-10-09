@@ -131,6 +131,64 @@ body.dark .rz-live{background:#183d33;border-color:#295d48;color:#8cdeb0}
 .rz-custom-code{padding:14px 0}.rz-custom-code .bar{display:flex;gap:10px;margin-top:10px;align-items:center}.rz-custom-code input{flex:1;min-width:140px;text-transform:uppercase;letter-spacing:1px;font-weight:700}.rz-custom-code button{white-space:nowrap}@media(max-width:540px){.rz-custom-code .bar{flex-wrap:wrap}}
 .rz-challenge-display{font:800 clamp(25px,4vw,42px) ui-monospace,Consolas,monospace;text-align:center;letter-spacing:3px;padding:22px 8px;margin:10px 0;background:#e9f4f0;border:1px solid #cbe5d9;color:#166d5c;border-radius:16px}.rz-timer-track{height:8px;background:#e6e9e7;border-radius:10px;overflow:hidden;margin-bottom:18px}.rz-timer-track i{display:block;height:100%;background:#efa953;width:100%;transition:width .25s linear}body.dark .rz-challenge-display{background:#193c37;color:#c0efe2;border-color:#31665b}
 .admin-password-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:10px 0}.admin-password-tools .m{overflow-wrap:anywhere;font-size:12px}
+
+/* Refined school welcome experience, scoped to the public opening screen */
+body.welcome-mode{background:#f6f4ee;color:#1e3a33}
+body.welcome-mode main{background:#f6f4ee;min-height:100vh;color:#1e3a33}
+body.welcome-mode .pad{display:block;padding:0;min-height:100vh}
+.welcome-shell{--w-green:#164a3f;--w-mid:#37796a;--w-orange:#d88b54;--w-muted:#65766f;min-height:100vh;max-width:1700px;margin:0 auto;padding:0 clamp(20px,5.4vw,90px);font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;position:relative;overflow:hidden;background:radial-gradient(ellipse at 92% 5%,#e6ede4 0,transparent 35%),#f6f4ee}
+.welcome-shell::before{content:'';pointer-events:none;position:absolute;width:380px;height:380px;border:1px solid #b6cdc250;border-radius:50%;left:-250px;top:190px}
+.welcome-top{min-height:104px;display:flex;align-items:center;justify-content:space-between;gap:28px;border-bottom:1px solid #d9e2d9;position:relative;z-index:2}
+.welcome-brand{display:flex;align-items:center;gap:13px;min-width:0}
+.welcome-brand .seal,.welcome-brand .seal.lg{width:56px;height:56px;box-shadow:0 0 0 5px #fff,0 6px 18px #183b2512;border:1px solid #fff;flex-shrink:0}
+.welcome-brand-title{display:block;font-size:13px;font-weight:850;letter-spacing:1px;line-height:1.35;color:#193d36}
+.welcome-brand-sub{display:block;font-size:10px;color:#66857a;letter-spacing:2.5px;font-weight:700;margin-top:4px}
+.welcome-nav{display:flex;gap:23px;align-items:center}
+.welcome-nav-note{font-size:12px;color:#607c71;font-weight:650;white-space:nowrap}
+.welcome-nav-login{background:transparent;border:1px solid #8baea1;color:#245e50;border-radius:12px;padding:12px 17px;cursor:pointer;font-weight:750;font-size:13px;transition:background .2s,transform .2s}
+.welcome-nav-login:hover{background:#e2eee8;transform:translateY(-2px)}
+.welcome-hero{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:clamp(36px,5vw,90px);align-items:center;min-height:660px;padding:57px 0 66px;position:relative}
+.welcome-copy{position:relative;z-index:1;max-width:725px}
+.welcome-eyebrow{display:inline-flex;gap:9px;align-items:center;background:#e6eee7;border:1px solid #d0e2d5;border-radius:50px;color:#377365;padding:10px 15px;font-weight:800;font-size:10px;letter-spacing:1.45px}
+.welcome-eyebrow-dot{width:7px;height:7px;background:#d88b54;border-radius:50%;box-shadow:0 0 0 4px #ebd2bb}
+.welcome-copy h1{font-family:Georgia,'Times New Roman',serif;font-weight:600;font-size:clamp(45px,5.25vw,82px);line-height:1.085;letter-spacing:-2.75px;color:#183d34;margin:26px 0 23px}
+.welcome-copy h1 em{color:#c47e50;font-style:italic;font-weight:500}
+.welcome-copy-description{font-size:clamp(14px,1.2vw,17px);line-height:1.85;color:#65796f;max-width:535px;margin:0}
+.welcome-hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:30px 0 28px}
+.welcome-enter{border:0;background:#1d6554;color:#fff;border-radius:14px;padding:16px 19px 16px 22px;cursor:pointer;display:inline-flex;align-items:center;gap:25px;font-size:14px;font-weight:800;box-shadow:0 10px 26px #1d65542c;transition:background .2s,transform .2s,box-shadow .2s}
+.welcome-enter:hover{background:#124b3f;transform:translateY(-2px);box-shadow:0 16px 28px #1d65543c}
+.welcome-enter-arrow{background:#ffffff2d;border-radius:9px;display:grid;place-items:center;width:32px;height:32px;font-size:19px}
+.welcome-explore{background:transparent;color:#32665a;border:1px solid #cddbd2;border-radius:14px;padding:19px 17px;cursor:pointer;font-weight:750;font-size:13px;transition:background .2s}
+.welcome-explore:hover{background:#e3eee6}
+.welcome-assurance{display:flex;align-items:center;gap:9px;font-size:12px;color:#658176}
+.welcome-assurance svg{flex-shrink:0;color:#468b78}
+.welcome-scene{position:relative;align-self:stretch;min-height:515px;display:flex;align-items:center;padding:20px 18px 20px 0}
+.welcome-scene::before{content:'';position:absolute;inset:0 -6px 0 11%;background:#dfe8df;border-radius:46% 48% 36% 50%;transform:rotate(-7deg)}
+.welcome-photo{position:relative;isolation:isolate;width:100%;height:100%;min-height:475px;border-radius:34px 105px 36px 34px;background:linear-gradient(180deg,#173b3010 36%,#09261fe6 100%),var(--school-photo) center/cover no-repeat;box-shadow:0 28px 72px #1d4b3d30;overflow:hidden}
+.welcome-photo:after{content:'';position:absolute;inset:0;border:1px solid #ffffff65;border-radius:inherit;pointer-events:none}
+.welcome-photo-caption{position:absolute;bottom:34px;left:32px;right:26px;color:white;z-index:1}
+.welcome-photo-caption small{letter-spacing:2px;font-size:10px;font-weight:850;color:#d2e3d8;display:block;margin-bottom:8px}
+.welcome-photo-caption strong{font-family:Georgia,serif;font-size:clamp(24px,3vw,38px);font-weight:500;display:block;line-height:1.2}
+.welcome-photo-caption span{display:block;color:#d6e2d9;font-size:12px;margin-top:9px}
+.welcome-badge{position:absolute;right:-8px;top:75px;z-index:3;display:flex;align-items:center;gap:12px;max-width:260px;border-radius:17px;background:#fffcf7;color:#245348;padding:14px 17px;box-shadow:0 14px 40px #14362b29;border:1px solid #fff}
+.welcome-badge-icon{width:41px;height:41px;flex-shrink:0;background:#e3efe7;border-radius:12px;display:grid;place-items:center;color:#1f7359}
+.welcome-badge-icon svg{width:22px;height:22px}
+.welcome-badge strong{display:block;font-size:12px;line-height:1.45}.welcome-badge small{font-size:10px;line-height:1.55;display:block;color:#729084;margin-top:4px}
+.welcome-accent{position:absolute;bottom:42px;left:-27px;z-index:3;width:78px;height:78px;border-radius:22px;background:#d5915a;display:grid;place-items:center;color:#fff;box-shadow:0 13px 26px #b7835f38;transform:rotate(-11deg)}
+.welcome-accent svg{width:36px;height:36px;transform:rotate(11deg)}
+.welcome-details{position:relative;border-top:1px solid #dbe4db;padding:28px 0 35px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.welcome-detail{display:flex;gap:13px;align-items:flex-start;padding:16px 14px 16px 0}
+.welcome-detail-icon{flex-shrink:0;width:44px;height:44px;display:grid;place-items:center;border:1px solid #cfded3;background:#ebf2eb;color:#347a66;border-radius:13px}
+.welcome-detail-icon svg{width:21px;height:21px}
+.welcome-detail h3{font-size:13px;font-weight:800;margin:1px 0 6px;color:#274e43}.welcome-detail p{font-size:12px;color:#718178;margin:0;line-height:1.65;max-width:300px}
+.welcome-footer{border-top:1px solid #dbe4db;min-height:73px;display:flex;align-items:center;justify-content:space-between;gap:15px;color:#829086;font-size:11px}
+.welcome-footer span:last-child{display:inline-flex;align-items:center;gap:8px}
+.welcome-back{margin-top:13px;display:block;background:transparent;border:0;cursor:pointer;color:#536f66;font-size:12px;width:100%;padding:8px}
+.welcome-back:hover{text-decoration:underline}
+@media(max-width:1020px){.welcome-hero{gap:35px;min-height:590px}.welcome-copy h1{font-size:clamp(40px,5vw,60px)}.welcome-badge{right:0;top:55px}.welcome-scene{min-height:460px}.welcome-photo{min-height:430px}.welcome-detail{padding-right:0}}
+@media(max-width:780px){.welcome-shell{padding:0 24px}.welcome-hero{grid-template-columns:1fr;gap:18px;padding:52px 0 35px}.welcome-copy{max-width:680px}.welcome-copy h1{font-size:clamp(42px,8.5vw,66px)}.welcome-scene{min-height:390px;padding:10px 8px 15px}.welcome-photo{min-height:395px;border-radius:24px 80px 24px 24px}.welcome-scene::before{inset:0 7px 0 11%}.welcome-accent{left:1px;bottom:30px;width:58px;height:58px}.welcome-details{grid-template-columns:1fr 1fr}.welcome-detail:last-child{grid-column:1 / -1}}
+@media(max-width:520px){.welcome-shell{padding:0 17px}.welcome-top{min-height:83px}.welcome-brand .seal,.welcome-brand .seal.lg{width:43px;height:43px}.welcome-brand-title{font-size:10px;letter-spacing:.5px}.welcome-brand-sub{font-size:8px;letter-spacing:1.5px}.welcome-nav-note{display:none}.welcome-nav-login{padding:11px 12px;font-size:11px}.welcome-hero{padding:34px 0 25px}.welcome-copy h1{font-size:clamp(38px,11vw,52px);letter-spacing:-1.5px;margin:23px 0 17px}.welcome-copy-description{font-size:14px}.welcome-hero-actions{margin:24px 0 20px}.welcome-enter{width:100%;justify-content:space-between;padding:13px 15px}.welcome-explore{width:100%;padding:15px}.welcome-scene{min-height:320px;padding:10px 0}.welcome-photo{min-height:315px;border-radius:24px 72px 24px 24px}.welcome-photo-caption{left:20px;bottom:22px}.welcome-photo-caption strong{font-size:25px}.welcome-badge{right:-4px;top:25px;padding:10px;max-width:210px}.welcome-badge-icon{width:33px;height:33px}.welcome-badge strong{font-size:10px}.welcome-badge small{font-size:9px}.welcome-accent{width:49px;height:49px;left:-8px;bottom:20px}.welcome-accent svg{width:25px;height:25px}.welcome-details{grid-template-columns:1fr;gap:0;padding:19px 0}.welcome-detail,.welcome-detail:last-child{grid-column:auto;border-bottom:1px solid #e1e7df;padding:15px 2px}.welcome-footer{align-items:flex-start;flex-direction:column;padding:18px 0}}
+@media(prefers-reduced-motion:reduce){.welcome-shell *, .welcome-shell *::before,.welcome-shell *::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
@@ -530,9 +588,30 @@ function firstPasswordScreen(){
 }
 function enforceAccess(){const id=getAccount();if(id&&id!=='superadmin'&&passwordSetupRequired()){firstPasswordScreen();return false}if(id&&id!=='superadmin'&&!getUsers().some(u=>u.id===id)){setAccount(null);clearLockedScreen();loginScreen();return false}if(id&&id!=='superadmin'&&!enabled(id)){lockedScreen();return false}if(id)clearLockedScreen();return true}
 function isAuth(){const id=getAccount();return id==='superadmin'||getUsers().some(a=>a.id===id)}
+function welcomeScreen(){
+ document.getElementById('floatingSuper')?.remove();clearLockedScreen();document.body.classList.add('lock','welcome-mode');
+ const ico={
+  lock:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1"/></svg>`,
+  users:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6M17 14a5 5 0 0 1 4 5v1"/></svg>`,
+  papers:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v5h4M9 12h7M9 16h7"/></svg>`,
+  chart:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V4M4 20h16M8 16v-4M13 16V8M18 16V5"/></svg>`,
+  book:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6c-2-2-5-2-9-1v14c4-1 7-1 9 1 2-2 5-2 9-1V5c-4-1-7-1-9 1ZM12 6v14"/></svg>`
+ };
+ show(`<div class="welcome-shell">
+  <header class="welcome-top"><div class="welcome-brand"><span class="seal lg" role="img" aria-label="School seal"></span><span><strong class="welcome-brand-title">RESTITUTA Z. MEDINA</strong><small class="welcome-brand-sub">ELEMENTARY SCHOOL</small></span></div><nav class="welcome-nav" aria-label="Welcome navigation"><span class="welcome-nav-note">Staff & faculty workspace</span><button type="button" class="welcome-nav-login" id="welcomeNavLogin">Staff Sign In ↗</button></nav></header>
+  <section class="welcome-hero" aria-labelledby="welcomeHeading"><div class="welcome-copy"><span class="welcome-eyebrow"><i class="welcome-eyebrow-dot"></i>WELCOME TO THE SCHOOL PORTAL</span><h1 id="welcomeHeading">A brighter way to <em>manage every student.</em></h1><p class="welcome-copy-description">From first enrollment to academic records, bring the essentials of school management together in one thoughtful, easy-to-use workspace.</p><div class="welcome-hero-actions"><button type="button" class="welcome-enter" id="welcomeEnter">Enter Management Portal <span class="welcome-enter-arrow" aria-hidden="true">↗</span></button><button type="button" class="welcome-explore" id="welcomeExplore">Explore features ↓</button></div><p class="welcome-assurance">${ico.lock} For authorized school personnel only</p></div>
+  <div class="welcome-scene"><div class="welcome-photo" role="img" aria-label="Restituta Z. Medina Elementary School campus"><div class="welcome-photo-caption"><small>A PLACE TO LEARN & GROW</small><strong>Every student matters.</strong><span>Better organization. More time for education.</span></div></div><div class="welcome-badge"><span class="welcome-badge-icon">${ico.papers}</span><span><strong>Enrollment made manageable</strong><small>Applications, reviews and records</small></span></div><div class="welcome-accent" aria-hidden="true">${ico.book}</div></div></section>
+  <section class="welcome-details" id="welcomeFeatures" aria-label="Portal capabilities"><div class="welcome-detail"><span class="welcome-detail-icon">${ico.users}</span><div><h3>Student information</h3><p>Keep profiles and essential school records organized in one place.</p></div></div><div class="welcome-detail"><span class="welcome-detail-icon">${ico.papers}</span><div><h3>Enrollment applications</h3><p>Review incoming submissions and manage approval decisions.</p></div></div><div class="welcome-detail"><span class="welcome-detail-icon">${ico.chart}</span><div><h3>Academic records</h3><p>View grades, progress and student academic history.</p></div></div></section>
+  <footer class="welcome-footer"><span>© ${new Date().getFullYear()} Restituta Z. Medina Elementary School</span><span>${ico.lock} School management · Authorized access</span></footer></div>`);
+ $('welcomeEnter').onclick=()=>loginScreen(false);
+ $('welcomeNavLogin').onclick=()=>loginScreen(false);
+ $('welcomeExplore').onclick=()=>document.getElementById('welcomeFeatures')?.scrollIntoView({behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'});
+}
 function loginScreen(superMode=false){
- document.getElementById('floatingSuper')?.remove();clearLockedScreen();document.body.classList.add('lock');
+ document.getElementById('floatingSuper')?.remove();clearLockedScreen();document.body.classList.remove('welcome-mode');document.body.classList.add('lock');
  show(`<div class="card login"><div class="login-head"><span class="seal lg" role="img" aria-label="School logo"></span><h2>${esc(S.school)}</h2><p class="m">${superMode?'Second Management — Super Admin':'Enrollment Management System'}</p></div><form id="lf"><label>${superMode?'Super Admin Email':'Management Email'}<input name="u" type="text" required autocomplete="username" placeholder="Enter email"></label><label>Password<input name="p" type="password" required autocomplete="current-password" placeholder="Enter password"></label><p id="le" role="alert" style="color:#dc2626;min-height:1.3em;font-size:13px"></p><button class="btn" style="width:100%">${superMode?'Open Second Management':'Log In to Dashboard'}</button></form>${superMode?'<p style="text-align:center"><button type="button" class="btn s" id="switchmg">← Back to Manager Login</button></p>':''}<p class="login-foot">Authorized school personnel only</p></div>`);
+ const loginCard=document.querySelector('#view .card.login');
+ if(loginCard){const back=document.createElement('button');back.className='welcome-back';back.type='button';back.textContent='← Back to Welcome';back.onclick=welcomeScreen;loginCard.appendChild(back)}
  $('switchmg')?.addEventListener('click',()=>loginScreen(false));
  document.getElementById('floatingSuper')?.remove();
  if(!superMode){const b=document.createElement('button');b.id='floatingSuper';b.type='button';b.title='Administrator access';b.setAttribute('aria-label','Administrator access');b.textContent='⚙';b.onclick=()=>loginScreen(true);document.body.appendChild(b)}
@@ -616,7 +695,7 @@ async function start(){
   $('md').onclick=e=>{if(e.target.id=='md')closeM()};
   $('dm').onclick=async()=>{S.dark=!S.dark;await put('settings',S);apply();if(cur=='settings')R.settings()};
   $('lo').onclick=()=>{setAccount(null);location.reload()};
-  isAuth()?start():(setAccount(null),loginScreen())})();
+  isAuth()?start():(setAccount(null),welcomeScreen())})();
 </script>
 </body>
 </html>
